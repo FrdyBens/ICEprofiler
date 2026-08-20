@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "project": {
+    "id": "private-environment",
+    "displayName": "private Profile",
+    "description": "Auto-generated private isolation profile.",
+    "template": "private"
+  },
+  "application": {
+    "provider": "brave",
+    "executable": null,
+    "arguments": [],
+    "initialUrl": "about:blank"
+  },
+  "network": {
+    "mode": "allowlist",
+    "allowedDomains": [],
+    "deniedDomains": [],
+    "allowedIps": [],
+    "allowedCidrs": [],
+    "allowedPorts": [443],
+    "allowHttp": false,
+    "allowHttps": true,
+    "allowWebSocket": false,
+    "allowQuic": false,
+    "allowIpv6": true,
+    "allowLocalhost": false,
+    "allowPrivateNetworks": false
+  },
+  "dns": {
+    "mode": "policy",
+    "allowDirectIp": false,
+    "allowDoh": false,
+    "allowDot": false
+  },
+  "filesystem": {
+    "encrypted": true,
+    "downloads": "isolated",
+    "temporaryFiles": "isolated",
+    "allowSharedDirectories": false
+  },
+  "process": {
+    "monitor": true,
+    "allowChildProcesses": true,
+    "allowedExecutables": [],
+    "maxMemoryMb": 4096,
+    "singleInstancePerProject": true
+  },
+  "privacy": {
+    "sync": false,
+    "telemetry": false,
+    "passwordSaving": false,
+    "autofill": false,
+    "clearOnExit": false
+  },
+  "security": {
+    "mode": "strict",
+    "failClosed": true,
+    "tamperDetection": true,
+    "integrityVerification": true,
+    "requireSignedPolicy": false,
+    "preventDevTools": true,
+    "preventExtensionsModification": true
+  }
+}
