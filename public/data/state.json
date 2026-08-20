@@ -1,0 +1,379 @@
+{
+  "projects": {
+    "test0": {
+      "application": {
+        "arguments": [],
+        "environmentVariables": {},
+        "executable": null,
+        "initialUrl": "aestylla.com",
+        "provider": "brave"
+      },
+      "dns": {
+        "allowDirectIp": false,
+        "allowDoh": false,
+        "allowDot": false,
+        "customResolvers": [],
+        "mode": "policy"
+      },
+      "filesystem": {
+        "allowSharedDirectories": false,
+        "customStoragePath": null,
+        "downloads": "isolated",
+        "encrypted": false,
+        "temporaryFiles": "isolated"
+      },
+      "network": {
+        "allowHttp": true,
+        "allowHttps": true,
+        "allowIpv6": true,
+        "allowLocalhost": false,
+        "allowPrivateNetworks": false,
+        "allowQuic": false,
+        "allowWebSocket": false,
+        "allowedCidrs": [],
+        "allowedDomains": [
+          "aestylla.com",
+          "aestylla.co",
+          "aestylla.my",
+          "aestylle.com",
+          "aestylle.co",
+          "aestylle.my"
+        ],
+        "allowedIps": [],
+        "allowedPorts": [
+          80,
+          443
+        ],
+        "deniedDomains": [],
+        "mode": "allowlist"
+      },
+      "privacy": {
+        "autofill": false,
+        "clearOnExit": false,
+        "passwordSaving": false,
+        "sync": false,
+        "telemetry": false
+      },
+      "process": {
+        "allowChildProcesses": true,
+        "allowedExecutables": [],
+        "maxMemoryMb": 4096,
+        "monitor": true,
+        "singleInstancePerProject": true
+      },
+      "project": {
+        "createdAt": "2026-08-19T12:16:18.9696277Z",
+        "description": "",
+        "displayName": "test0",
+        "id": "test0",
+        "template": "balanced",
+        "updatedAt": "2026-08-19T12:16:18.9696284Z"
+      },
+      "schemaVersion": 2,
+      "security": {
+        "failClosed": false,
+        "integrityVerification": true,
+        "mode": "balanced",
+        "preventDevTools": true,
+        "preventExtensionsModification": true,
+        "requireSignedPolicy": false,
+        "tamperDetection": false
+      }
+    },
+    "test1": {
+      "application": {
+        "initialUrl": "https://aestylla.com",
+        "provider": "brave"
+      },
+      "filesystem": {
+        "encrypted": true
+      },
+      "network": {
+        "allowedDomains": [
+          "aestylla.com"
+        ],
+        "mode": "allowlist"
+      },
+      "privacy": {
+        "clearOnExit": false
+      },
+      "process": {
+        "monitor": true,
+        "singleInstancePerProject": true
+      },
+      "project": {
+        "displayName": "test1",
+        "id": "test1",
+        "template": "strict"
+      },
+      "schemaVersion": 2,
+      "security": {
+        "failClosed": true,
+        "mode": "balanced"
+      }
+    },
+    "git": {
+      "application": {
+        "initialUrl": "https://github.com",
+        "provider": "brave"
+      },
+      "filesystem": {
+        "downloads": "isolated",
+        "encrypted": true,
+        "temporaryFiles": "isolated"
+      },
+      "network": {
+        "allowHttp": true,
+        "allowHttps": true,
+        "allowedDomains": [
+          "github.com",
+          "*.github.com",
+          "*.githubusercontent.com"
+        ],
+        "allowedPorts": [
+          80,
+          443
+        ],
+        "mode": "allowlist"
+      },
+      "process": {
+        "maxMemoryMb": 4096,
+        "monitor": true,
+        "singleInstancePerProject": true
+      },
+      "project": {
+        "displayName": "git",
+        "id": "git",
+        "template": "balanced"
+      },
+      "schemaVersion": 2,
+      "security": {
+        "failClosed": false,
+        "mode": "balanced",
+        "tamperDetection": true
+      },
+      "privacy": {
+        "clearOnExit": false
+      }
+    },
+    "sevelr": {
+      "application": {
+        "initialUrl": "https://aestylla.com",
+        "provider": "brave"
+      },
+      "filesystem": {
+        "downloads": "isolated",
+        "encrypted": true,
+        "temporaryFiles": "isolated"
+      },
+      "network": {
+        "allowHttp": true,
+        "allowHttps": true,
+        "allowedDomains": [
+          "aestylla.com",
+          "*.aestylla.com",
+          "aestylla.co",
+          "*.aestylla.co",
+          "aestylla.my",
+          "*.aestylla.my",
+          "aestylle.com",
+          "*.aestylle.com",
+          "aestylle.co",
+          "*.aestylle.co",
+          "aestylle.my",
+          "*.aestylle.my",
+          "6e4.fun",
+          "*.6e4.fun",
+          "n8n8.lol",
+          "*.n8n8.lol",
+          "maina.icu",
+          "*.maina.icu",
+          "google.com",
+          "*.google.com",
+          "gstatic.com",
+          "*.gstatic.com",
+          "googleapis.com",
+          "*.googleapis.com",
+          "chromewebstore.google.com",
+          "*.chromewebstore.google.com",
+          "clients2.google.com",
+          "*.clients2.google.com",
+          "clients4.google.com",
+          "*.clients4.google.com",
+          "update.googleapis.com",
+          "*.update.googleapis.com",
+          "dl.google.com",
+          "*.dl.google.com",
+          "storage.googleapis.com",
+          "*.storage.googleapis.com",
+          "accounts.google.com",
+          "*.accounts.google.com",
+          "lh3.googleusercontent.com",
+          "*.lh3.googleusercontent.com",
+          "brave.com",
+          "*.brave.com",
+          "brave-browser.com",
+          "*.brave-browser.com",
+          "\"clients2.google.com\"",
+          "\"*.clients2.google.com\"",
+          "\"clients3.google.com\"",
+          "\"*.clients3.google.com\"",
+          "\"clients4.google.com\"",
+          "\"*.clients4.google.com\"",
+          "\"clients5.google.com\"",
+          "\"*.clients5.google.com\"",
+          "\"clients6.google.com\"",
+          "\"*.clients6.google.com\"",
+          "\"clients7.google.com\"",
+          "\"*.clients7.google.com\"",
+          "\"clients8.google.com\"",
+          "\"*.clients8.google.com\"",
+          "\"clients9.google.com\"",
+          "\"*.clients9.google.com\"",
+          "\"clients10.google.com\"",
+          "\"*.clients10.google.com\"",
+          "\"clients11.google.com\"",
+          "\"*.clients11.google.com\"",
+          "\"clients12.google.com\"",
+          "\"*.clients12.google.com\"",
+          "\"clients13.google.com\"",
+          "\"*.clients13.google.com\"",
+          "\"clients14.google.com\"",
+          "\"*.clients14.google.com\"",
+          "\"clients15.google.com\"",
+          "\"*.clients15.google.com\"",
+          "\"clients16.google.com\"",
+          "\"*.clients16.google.com\"",
+          "\"clients17.google.com\"",
+          "\"*.clients17.google.com\"",
+          "\"clients18.google.com\"",
+          "\"*.clients18.google.com\"",
+          "\"clients19.google.com\"",
+          "\"*.clients19.google.com\"",
+          "\"clients20.google.com\"",
+          "\"*.clients20.google.com\"",
+          "\"clients21.google.com\"",
+          "\"*.clients21.google.com\"",
+          "\"clients22.google.com\"",
+          "\"*.clients22.google.com\"",
+          "\"clients23.google.com\"",
+          "\"*.clients23.google.com\"",
+          "\"clients24.google.com\"",
+          "\"*.clients24.google.com\""
+        ],
+        "allowedPorts": [
+          80,
+          443
+        ],
+        "mode": "allowlist"
+      },
+      "privacy": {
+        "clearOnExit": false
+      },
+      "process": {
+        "maxMemoryMb": 4096,
+        "monitor": true,
+        "singleInstancePerProject": true
+      },
+      "project": {
+        "displayName": "sevelr",
+        "id": "sevelr",
+        "template": "balanced"
+      },
+      "schemaVersion": 2,
+      "security": {
+        "failClosed": false,
+        "mode": "balanced",
+        "tamperDetection": true
+      }
+    },
+    "rer": {
+      "schemaVersion": 2,
+      "project": {
+        "id": "rer",
+        "displayName": "rer",
+        "template": "temporary"
+      },
+      "application": {
+        "provider": "brave",
+        "initialUrl": "https://"
+      },
+      "network": {
+        "mode": "allowlist",
+        "allowedDomains": [],
+        "allowedPorts": [
+          80,
+          443
+        ],
+        "allowHttp": true,
+        "allowHttps": true
+      },
+      "filesystem": {
+        "encrypted": true,
+        "downloads": "isolated",
+        "temporaryFiles": "isolated"
+      },
+      "process": {
+        "monitor": true,
+        "singleInstancePerProject": true,
+        "maxMemoryMb": 4096
+      },
+      "security": {
+        "mode": "temporary",
+        "failClosed": false,
+        "tamperDetection": true
+      }
+    },
+    "pinterestdownloader": {
+      "application": {
+        "initialUrl": "https://pinterest.com",
+        "provider": "brave"
+      },
+      "filesystem": {
+        "downloads": "isolated",
+        "encrypted": true,
+        "temporaryFiles": "isolated"
+      },
+      "network": {
+        "allowHttp": true,
+        "allowHttps": true,
+        "allowedDomains": [
+          "pinterest.com",
+          "*.pinterest.com",
+          "pinimg.com",
+          "*.pinimg.com",
+          "pinterest.net",
+          "*.pinterest.net",
+          "pinterestusercontent.com",
+          "*.pinterestusercontent.com",
+          "pintereststatic.com",
+          "*.pintereststatic.com"
+        ],
+        "allowedPorts": [
+          80,
+          443
+        ],
+        "mode": "allowlist"
+      },
+      "process": {
+        "maxMemoryMb": 4096,
+        "monitor": true,
+        "singleInstancePerProject": true
+      },
+      "project": {
+        "displayName": "pinterestdownloader",
+        "id": "pinterestdownloader",
+        "template": "balanced"
+      },
+      "schemaVersion": 2,
+      "security": {
+        "failClosed": false,
+        "mode": "balanced",
+        "tamperDetection": true
+      },
+      "privacy": {
+        "clearOnExit": false
+      }
+    }
+  }
+}
