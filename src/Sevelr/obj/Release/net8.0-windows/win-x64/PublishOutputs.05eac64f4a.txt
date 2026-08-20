@@ -1,0 +1,2 @@
+F:\M\Documents\brave builder\dist\bin\sevelr.pdb
+F:\M\Documents\brave builder\dist\bin\sevelr.exe
